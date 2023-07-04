@@ -7,16 +7,17 @@ using namespace cv;
 int main()
 {
     float markerLength=0.1;
-    string c="/home/yashveer/opencv_build/arucopractice_qt/build/cameraparam.txt";
+    string c="/home/yashveer/opencv_build/arucopractice_qt/build/cameraparam.txt"; //path of the camera Parameters of your Camera
     aruco::DetectorParameters params=aruco::DetectorParameters();
     aruco::Dictionary diction = aruco::getPredefinedDictionary(aruco::PredefinedDictionaryType(10));
     aruco::ArucoDetector detector(diction,params);
+    //CammMatrix and Distcoeffs are the camera calibration parameters created during the calibration process.
     Mat Cammatrix;
     Mat Distcoeff;
-    bool readok=readCameraParameters(c,Cammatrix,Distcoeff);
+    bool readok=readCameraParameters(c,Cammatrix,Distcoeff); 
     if(readok==false)
     {
-        cout << "Not Working"<<endl;
+        cout << "Camera Parameter Not provided"<<endl;
     }
     //Set Coordinate System
     Mat objPoints(4, 1, CV_32FC3);
@@ -63,10 +64,6 @@ int main()
 
                 }
         imshow("ouTPut ImAgE",imageCopy);
-        for(auto i:tvecs)
-        {
-            cout<<i[2]<<endl;
-        }
         waitKey(10);
     }
 
