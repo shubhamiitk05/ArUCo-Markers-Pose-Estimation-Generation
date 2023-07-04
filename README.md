@@ -18,7 +18,8 @@ ArUCo Markers using Camera Feed . You need to specify the camId of the USB Camer
 The file `camera_calibaration.cpp` contains the code necessary for calibrating your camera.
 Follow the steps mentioned on the Website https://docs.opencv.org/4.x/da/d13/tutorial_aruco_calibration.html.
 
-The file `create_ArUco_Board.cpp` contains the code for generating ArUco Boards. 
+The file `create_ArUco_Board.cpp` contains the code for generating ArUco Boards.
+
 The parameters for this function will look something like this
 "camera_calib.txt" -w=5 -h=7 -l=100 -s=10 -d=10
 
