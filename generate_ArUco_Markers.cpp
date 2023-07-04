@@ -19,9 +19,9 @@ int  main()
     cin>>markerID;
     cv::Mat newmarker;
     aruco::Dictionary dictionary = aruco::getPredefinedDictionary(dictionaryID);
-    aruco::generateImageMarker(dictionary,markerID,200,newmarker,1);
+    aruco::generateImageMarker(dictionary,markerID,200,newmarker,1); //Here,200 is the size of the ArUco Marker
     imshow("Generated Marker",newmarker);
-    imwrite("/home/yashveer/Downloads/newmarker.jpg", newmarker); //Location where you would want to save your marker for future purposes.
+    imwrite("/home/yashveer/Downloads/newmarker.jpg", newmarker); //Path where you would want to save your marker for future purposes.
     waitKey(0);
     return 0;
 }
