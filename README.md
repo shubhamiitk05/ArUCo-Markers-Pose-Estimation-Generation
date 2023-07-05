@@ -5,6 +5,7 @@ You can execute these programs directly in your terminal by running the appropra
 ## 1. ArUCo Marker Generation
 The file `Generate_ArUco_Markers.cpp` contains the code for ArUCo Marker Generation.
 You need to specify the type of marker you want to generate(Marker Type and Marker ID).
+
 <img src= Images/ArUcoMarker.png>
 
 ## 2. ArUCo Marker Detection
