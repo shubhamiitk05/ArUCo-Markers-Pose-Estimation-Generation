@@ -27,8 +27,6 @@ The file `create_ArUco_Board.cpp` contains the code for generating ArUco Boards.
 The parameters for this function will look something like this
 "camera_calib.txt" -w=5 -h=7 -l=100 -s=10 -d=10
 
-<img src="Images/ArUcoBoard.png">
-
 ## 4. Pose Estimation  
 The file `ArUco_Marker_Pose_Estimation.cpp` contains the code that performs pose estimation after detecting the 
 ArUCo markers. This is done in real-time for each frame obtained from the webcam feed. Please specify 
