@@ -13,6 +13,8 @@ The files `ArUco_Marker_Image_Detection.cpp` contains the code for detecting
 ArUCo Markers in images. You need to specify the path to the image and the type of marker you want to detect.Note that this code could be easily modified to perform 
 pose estimation on video files.  
 
+<img src="Images/Marker_Detection.jpg">
+
 The files `ArUco_Marker_Detection.cpp` contains the code for detecting
 ArUCo Markers using Camera Feed . You need to specify the camId of the USB Camera you are using and the type of marker you want to detect.
 
@@ -29,13 +31,15 @@ The parameters for this function will look something like this
 
 ## 4. Pose Estimation  
 The file `ArUco_Marker_Pose_Estimation.cpp` contains the code that performs pose estimation after detecting the 
-ArUCo markers. This is done in real-time for each frame obtained from the web-cam feed. You need to specify 
-the path to the camera calibration matrix and distortion coefficients obtained from the previous step as well 
-as the type for ArUCo marker you want to detect. Note that this code could be easily modified to perform 
+ArUCo markers. This is done in real-time for each frame obtained from the webcam feed. Please specify 
+the path to the camera calibration matrix, distortion coefficients obtained from the previous step, and
+the type for ArUCo marker you want to detect. Note that this code could be easily modified to perform 
 pose estimation on images and video files.  
 
+<img src="Images/Pose_estimation.jpg">
+
 Feel free to reach out to me in case of any issues.  
-If you find this repo useful in any way please do star ⭐️ it so that others can reap it's benefits as well.
+If you find this repo useful in any way, please do star ⭐️ it so that others can reap its benefits as well.
 
 ## References
 1. https://docs.opencv.org/4.x/d9/d6d/tutorial_table_of_content_aruco.html
